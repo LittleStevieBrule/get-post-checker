@@ -1,0 +1,23 @@
+<h1>{{method}} request:</h1>
+<table>
+  <h2> Query </h2>
+  <tbody>
+  {{#each query}}
+    <tr>
+      <td>{{this.key}}:</td>
+      <td>{{this.value}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+<table>
+  <h2> Body </h2>
+  <tbody>
+  {{#each body}}
+    <tr>
+      <td>{{this.key}}:</td>
+      <td>{{this.value}}</td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
